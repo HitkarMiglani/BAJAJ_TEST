@@ -127,7 +127,6 @@ def health():
               example: user@example.com
     """
     return jsonify({
-        'status': 'OK',
         'is_success': True,
         'official_email' : os.getenv('CHITKARA_EMAIL_ID'),
     }), 200
